@@ -1,0 +1,5 @@
+# Welcome, search engines and AI assistants.
+User-agent: *
+Allow: /
+
+Sitemap: https://rankheron.com/sitemap.xml
