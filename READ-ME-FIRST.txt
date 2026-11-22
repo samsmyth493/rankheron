@@ -1,0 +1,36 @@
+RANKHERON WEBSITE: HOW TO GO LIVE
+=================================
+
+1. Fill in the blanks (search each file for "[")
+   - index.html, privacy.html, terms.html: company name, company number,
+     registered office address, and "England and Wales" if that's wrong.
+   - privacy.html: the services you use (email, form, web host, accounts)
+     and how long you keep data.
+   - terms.html: VAT wording, payment terms, liability cap, and whether
+     articles published during a free trial are the client's to keep.
+   Have the privacy policy and terms checked before relying on them.
+
+2. Choose where trial sign-ups go (main.js, near the top)
+   - Leave FORM_ENDPOINT empty: visitors' email app opens with their
+     details filled in, addressed to hi@rankheron.com.
+   - Or create a free form at formspree.io, paste its address
+     (https://formspree.io/f/...) into FORM_ENDPOINT, and sign-ups
+     arrive in your inbox with no extra step for the visitor.
+   Make sure hi@rankheron.com actually receives email.
+
+3. Upload everything in this folder to the root of rankheron.com,
+   keeping the "fonts" folder as it is. No build step is needed.
+
+4. After it's live
+   - Visit https://rankheron.com/robots.txt and check it shows "Allow: /".
+   - Add the site in Google Search Console and submit
+     https://rankheron.com/sitemap.xml.
+   - Paste https://rankheron.com into Facebook's Sharing Debugger
+     (developers.facebook.com/tools/debug) and click "Scrape Again" so
+     Facebook picks up the preview image.
+
+5. Reviews badge
+   When you have real reviews, paste your Trustpilot or Google reviews
+   widget code into the empty <div id="reviews" hidden> under the hero
+   form in index.html, delete the word "hidden", and add the widget's
+   provider to the privacy policy.
